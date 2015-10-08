@@ -1,4 +1,5 @@
 # phpspecissue
+I'm using PHP 5.6.12
 
 This branch is used to point out a strange behaviour of phpspec.
 
