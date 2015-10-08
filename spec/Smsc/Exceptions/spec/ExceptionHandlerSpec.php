@@ -4,7 +4,6 @@ namespace spec\Smsc\Exceptions;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Psr\Log\LoggerInterface;
 
 /**
  * Class ExceptionHandlerSpec
@@ -14,10 +13,10 @@ use Psr\Log\LoggerInterface;
 class ExceptionHandlerSpec extends ObjectBehavior {
 
     /**
-     * @param LoggerInterface $logger
+     * @param \Psr\Log\LoggerInterface $logger
      * @param \Exception               $exception
      */
-    function it_should_handle_an_error_exception_and_log_critical(LoggerInterface $logger, \Exception $exception) {
+    function it_should_handle_an_error_exception_and_log_critical(\Psr\Log\LoggerInterface $logger, \Exception $exception) {
         $this->beConstructedWith($logger);
         $this->handle($exception);
         $logger->critical($exception)->shouldBeCalled();
