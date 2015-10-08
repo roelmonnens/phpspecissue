@@ -1,0 +1,13 @@
+{
+  "autoload" : {
+    "psr-4": {
+      "Smsc\\" : "Smsc"
+    }
+  },
+  "require" : {
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "2.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+suites:
+  Smsc:
+    namespace: Smsc\Exceptions
+    psr4_prefix: Smsc\Exceptions
+    src_path: Smsc/Exceptions
+    spec_path: spec/Smsc/Exceptions
